@@ -5,7 +5,7 @@ COPY src /build/src/
 WORKDIR /build/
 RUN mvn package
 
-FROM openjdk11:jre-11.0.9_11.1-alpine
+FROM fabric8/java-alpine-openjdk11-jre
 WORKDIR /app
 COPY --from=MAVEN_BUILD /build/target/challenge-0.0.1-SNAPSHOT.jar /app/
 ENTRYPOINT ["java", "-jar", "challenge-0.0.1-SNAPSHOT.jar"]
