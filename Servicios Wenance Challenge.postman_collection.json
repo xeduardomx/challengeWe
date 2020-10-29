@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "b689b8c2-4301-4468-a726-26d88c61575b",
+		"name": "Servicios Wenance Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/criptomoneda/fechaReg/28-10-2020 20:13:57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criptomoneda/fechaReg/28-10-2020 20:13:57",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						"fechaReg",
+						"28-10-2020 20:13:57"
+					]
+				},
+				"description": "Test de servicios de Wenance Challenge"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/criptomoneda/calcular/28-10-2020 22:09:12/28-10-2020 23:12:58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"lprice\": \"63198.2\",\r\n        \"curr1\": \"BTC\",\r\n        \"curr2\": \"USD\",\r\n        \"threadId\": \"1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criptomoneda/calcular/28-10-2020 22:09:12/28-10-2020 23:12:58",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						"calcular",
+						"28-10-2020 22:09:12",
+						"28-10-2020 23:12:58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/criptomoneda/fechaReg/28-10-2020 22:09:12/28-10-2020 23:12:58",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/criptomoneda/fechaReg/28-10-2020 22:09:12/28-10-2020 23:12:58",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						"fechaReg",
+						"28-10-2020 22:09:12",
+						"28-10-2020 23:12:58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/criptomoneda/curr1/BTC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/criptomoneda/curr1/BTC",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						"curr1",
+						"BTC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/criptomoneda/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lprice\": \"63198.8\",\r\n    \"curr1\": \"BTC\",\r\n    \"curr2\": \"USD\",\r\n    \"fechaReg\": \"28-10-2020 23:10:14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criptomoneda/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/criptomoneda/ed6690ca-4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lprice\": \"63198.8\",\r\n    \"curr1\": \"BTC\",\r\n    \"curr2\": \"USD\",\r\n    \"fechaReg\": \"28-10-2020 23:10:14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criptomoneda/ed6690ca-4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criptomoneda",
+						"ed6690ca-4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
